@@ -34,13 +34,15 @@ public class CommonListener {
 			int minY = event.world.getBottomY() + 4;
 			int maxY = event.world.getTopY() - 4;
 			float iterations = (event.world.getTopY() - event.world.getBottomY()) / 32F;
-			makeFeature(BLOCKS.get(0), 3, Math.round(iterations), minY, maxY);
-			makeFeature(BLOCKS.get(1), 3, Math.round(iterations * 0.75F), minY, maxY);
-			makeFeature(BLOCKS.get(2), 2, Math.round(iterations * 0.5F), minY, maxY);
-			makeFeature(BLOCKS.get(3), 1, Math.round(iterations * 0.5F), minY, (maxY + minY) >> 1);
-			makeFeature(BLOCKS.get(4), 1, Math.round(iterations * 0.5F), minY, (maxY + minY) >> 1);
-			makeFeature(BLOCKS.get(5), 3, Math.round(iterations * 0.75F), minY, maxY);
-			makeFeature(BLOCKS.get(6), 2, Math.round(iterations * 0.25F), minY, maxY);
+			int count = Math.max(1, Math.round(iterations * 0.75F));
+			int count2 = Math.max(1, Math.round(iterations * 0.5F));
+			makeFeature(BLOCKS.get(0), 3, Math.max(1, Math.round(iterations)), minY, maxY);
+			makeFeature(BLOCKS.get(1), 3, count, minY, maxY);
+			makeFeature(BLOCKS.get(2), 2, count2, minY, maxY);
+			makeFeature(BLOCKS.get(3), 1, count2, minY, (maxY + minY) >> 1);
+			makeFeature(BLOCKS.get(4), 1, count2, minY, (maxY + minY) >> 1);
+			makeFeature(BLOCKS.get(5), 3, count, minY, maxY);
+			makeFeature(BLOCKS.get(6), 2, Math.max(1, Math.round(iterations * 0.25F)), minY, maxY);
 		}
 		
 		for (Structure structure : STRUCTURES) {
