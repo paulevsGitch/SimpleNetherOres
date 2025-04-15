@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "simplenetherores:iron_ore"
+	},
+	"result": {
+		"item": "minecraft:iron_ingot"
+	}
+}

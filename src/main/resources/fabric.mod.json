@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "simplenetherores",
+	"version": "${version}",
+
+	"name": "SimpleNetherOres",
+	"description": "Simple ores for the Nether dimension",
+	"authors": [
+		"paulevs"
+	],
+	"contact": {
+		"homepage": "https://github.com/paulevsGitch/SimpleNetherOres/releases",
+		"sources": "https://github.com/paulevsGitch/SimpleNetherOres",
+		"issues": "https://github.com/paulevsGitch/SimpleNetherOres/issues",
+		"discord": "https://discord.gg/qxcP8EjkUC"
+	},
+
+	"license": "MIT",
+	"icon": "assets/simplenetherores/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"stationapi:event_bus": [
+			"paulevs.simplenetherores.CommonListener"
+		],
+		"bhcreative:event_bus": [
+			"paulevs.simplenetherores.CreativeTabListener"
+		]
+	},
+
+	"depends": {
+		"minecraft": "1.0.0-beta.7.3",
+		"stationapi": ">=2.0.0-alpha.3"
+	}
+}

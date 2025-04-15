@@ -1,0 +1,6 @@
+{
+	"parent": "simplenetherores:block/nether_ore_emissive",
+	"textures": {
+		"ore": "simplenetherores:block/redstone_ore"
+	}
+}

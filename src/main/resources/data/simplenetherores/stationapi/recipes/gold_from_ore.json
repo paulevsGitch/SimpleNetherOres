@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "simplenetherores:gold_ore"
+	},
+	"result": {
+		"item": "minecraft:gold_ingot"
+	}
+}
