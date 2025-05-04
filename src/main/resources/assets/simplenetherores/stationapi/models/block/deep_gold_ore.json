@@ -1,0 +1,6 @@
+{
+	"parent": "simplenetherores:block/deep_nether_ore",
+	"textures": {
+		"ore": "simplenetherores:block/gold_ore"
+	}
+}

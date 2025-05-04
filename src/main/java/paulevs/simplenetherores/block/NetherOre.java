@@ -1,4 +1,4 @@
-package paulevs.simplenetherores;
+package paulevs.simplenetherores.block;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;

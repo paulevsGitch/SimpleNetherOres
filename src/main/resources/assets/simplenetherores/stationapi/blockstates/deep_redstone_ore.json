@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"lit=false": { "model": "simplenetherores:block/deep_redstone_ore" },
+		"lit=true": { "model": "simplenetherores:block/deep_redstone_ore_active" }
+	}
+}

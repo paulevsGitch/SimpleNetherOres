@@ -21,10 +21,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"stationapi:event_bus": [
-			"paulevs.simplenetherores.CommonListener"
+			"paulevs.simplenetherores.listener.CommonListener"
 		],
 		"bhcreative:event_bus": [
-			"paulevs.simplenetherores.CreativeTabListener"
+			"paulevs.simplenetherores.listener.CreativeTabListener"
 		]
 	},
 

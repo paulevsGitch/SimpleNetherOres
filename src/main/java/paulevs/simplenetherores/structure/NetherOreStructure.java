@@ -1,4 +1,4 @@
-package paulevs.simplenetherores;
+package paulevs.simplenetherores.structure;
 
 import net.minecraft.block.Block;
 import net.minecraft.level.Level;
@@ -16,11 +16,7 @@ public class NetherOreStructure extends Structure {
 	private final int radius;
 	
 	public NetherOreStructure(Block block, int radius) {
-		this(block.getDefaultState(), radius);
-	}
-	
-	public NetherOreStructure(BlockState state, int radius) {
-		this.state = state;
+		this.state = block.getDefaultState();
 		this.radius = radius;
 		this.randomMin = radius >> 1;
 		this.randomRange = randomMin << 1 | 1;
@@ -40,12 +36,15 @@ public class NetherOreStructure extends Structure {
 					int ysq = dy + random.nextInt(randomRange) - randomMin;
 					int zsq = dz + random.nextInt(randomRange) - randomMin;
 					if (xsq * xsq + ysq * ysq + zsq * zsq > radiusSqr) continue;
-					if (!level.getBlockState(wx, wy, wz).isOf(Block.NETHERRACK)) continue;
-					if (level.getBlockState(wx, wy + 1, wz).getMaterial().isReplaceable()) continue;
+					if (!canReplace(level.getBlockState(wx, wy, wz))) continue;
 					level.setBlockState(wx, wy, wz, state);
 				}
 			}
 		}
 		return true;
+	}
+	
+	protected boolean canReplace(BlockState state) {
+		return state.isOf(Block.NETHERRACK);
 	}
 }

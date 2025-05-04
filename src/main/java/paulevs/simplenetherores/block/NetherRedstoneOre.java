@@ -1,4 +1,4 @@
-package paulevs.simplenetherores;
+package paulevs.simplenetherores.block;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -19,7 +19,7 @@ public class NetherRedstoneOre extends NetherOre {
 		super(id);
 		setTicksRandomly(true);
 		setDefaultState(getDefaultState().with(Properties.LIT, false));
-		setDropItem(Item.redstoneDust, 1, 5);
+		setDropItem(Item.redstoneDust, 4, 8);
 		setLuminance(state -> state.get(Properties.LIT) ? 7 : 0);
 	}
 	

@@ -1,0 +1,6 @@
+{
+	"parent": "simplenetherores:block/deep_nether_ore_emissive",
+	"textures": {
+		"ore": "simplenetherores:block/glowstone_ore"
+	}
+}

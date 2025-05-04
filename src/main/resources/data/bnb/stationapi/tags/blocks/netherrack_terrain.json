@@ -1,0 +1,18 @@
+{
+	"values": [
+		"simplenetherores:coal_ore",
+		"simplenetherores:iron_ore",
+		"simplenetherores:gold_ore",
+		"simplenetherores:diamond_ore",
+		"simplenetherores:redstone_ore",
+		"simplenetherores:glowstone_ore",
+		"simplenetherores:lapis_ore",
+		{ "id": "simplenetherores:coal_ore", "required": false },
+		{ "id": "simplenetherores:iron_ore", "required": false },
+		{ "id": "simplenetherores:gold_ore", "required": false },
+		{ "id": "simplenetherores:diamond_ore", "required": false },
+		{ "id": "simplenetherores:redstone_ore", "required": false },
+		{ "id": "simplenetherores:glowstone_ore", "required": false },
+		{ "id": "simplenetherores:lapis_ore", "required": false }
+	]
+}
