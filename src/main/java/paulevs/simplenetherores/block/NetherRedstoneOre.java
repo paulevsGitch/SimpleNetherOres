@@ -19,7 +19,7 @@ public class NetherRedstoneOre extends NetherOre {
 		super(id);
 		setTicksRandomly(true);
 		setDefaultState(getDefaultState().with(Properties.LIT, false));
-		setDropItem(Item.redstoneDust, 4, 8);
+		setDropItem(() -> Item.redstoneDust, 4, 8);
 		setLuminance(state -> state.get(Properties.LIT) ? 7 : 0);
 	}
 	
