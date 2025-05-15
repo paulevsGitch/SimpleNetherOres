@@ -39,22 +39,22 @@ public class CommonListener {
 	
 	@EventListener
 	public void onBlockRegister(BlockRegistryEvent event) {
-		coalOre = makeBlock("coal_ore").setDropItem(Item.coal);
+		coalOre = makeBlock("coal_ore").setDropItem(() -> Item.coal);
 		ironOre = makeBlock("iron_ore");
 		goldOre = makeBlock("gold_ore");
-		diamondOre = makeBlock("diamond_ore").setDropItem(Item.diamond);
+		diamondOre = makeBlock("diamond_ore").setDropItem(() -> Item.diamond);
 		redstoneOre = add(new NetherRedstoneOre(SimpleNetherOres.id("redstone_ore")));
-		glowstoneOre = makeBlock("glowstone_ore").setDropItem(Item.glowstoneDust, 2, 4).setLightEmittance(0.75F);
-		lapisOre = makeBlock("lapis_ore").setDropItem(Item.dyePowder, 4, 3, 6);
+		glowstoneOre = makeBlock("glowstone_ore").setDropItem(() -> Item.glowstoneDust, 2, 4).setLightEmittance(0.75F);
+		lapisOre = makeBlock("lapis_ore").setDropItem(() -> Item.dyePowder, 4, 3, 6);
 		
 		if (FabricLoader.getInstance().isModLoaded("bnb")) {
-			deepCoalOre = makeBlock("deep_coal_ore").setDropItem(Item.coal);
+			deepCoalOre = makeBlock("deep_coal_ore").setDropItem(() -> Item.coal);
 			deepIronOre = makeBlock("deep_iron_ore");
 			deepGoldOre = makeBlock("deep_gold_ore");
-			deepDiamondOre = makeBlock("deep_diamond_ore").setDropItem(Item.diamond);
+			deepDiamondOre = makeBlock("deep_diamond_ore").setDropItem(() -> Item.diamond);
 			deepRedstoneOre = add(new NetherRedstoneOre(SimpleNetherOres.id("deep_redstone_ore")));
-			deepGlowstoneOre = makeBlock("deep_glowstone_ore").setDropItem(Item.glowstoneDust, 2, 4).setLightEmittance(0.75F);
-			deepLapisOre = makeBlock("deep_lapis_ore").setDropItem(Item.dyePowder, 4, 3, 6);
+			deepGlowstoneOre = makeBlock("deep_glowstone_ore").setDropItem(() -> Item.glowstoneDust, 2, 4).setLightEmittance(0.75F);
+			deepLapisOre = makeBlock("deep_lapis_ore").setDropItem(() -> Item.dyePowder, 4, 3, 6);
 		}
 	}
 	

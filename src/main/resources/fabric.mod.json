@@ -15,7 +15,7 @@
 		"discord": "https://discord.gg/qxcP8EjkUC"
 	},
 
-	"license": "MIT",
+	"license": "LGPLv2.1",
 	"icon": "assets/simplenetherores/icon.png",
 
 	"environment": "*",
