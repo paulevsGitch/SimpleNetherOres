@@ -2,6 +2,9 @@
 	"values": [
 		"simplenetherores:iron_ore",
 		"simplenetherores:glowstone_ore",
-		"simplenetherores:lapis_ore"
+		"simplenetherores:lapis_ore",
+		{ "id": "simplenetherores:deep_iron_ore", "required": false },
+		{ "id": "simplenetherores:deep_glowstone_ore", "required": false },
+		{ "id": "simplenetherores:deep_lapis_ore", "required": false }
 	]
 }

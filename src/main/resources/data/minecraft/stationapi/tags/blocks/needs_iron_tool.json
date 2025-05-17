@@ -2,6 +2,9 @@
 	"values": [
 		"simplenetherores:gold_ore",
 		"simplenetherores:diamond_ore",
-		"simplenetherores:redstone_ore"
+		"simplenetherores:redstone_ore",
+		{ "id": "simplenetherores:deep_diamond_ore", "required": false },
+		{ "id": "simplenetherores:deep_redstone_ore", "required": false },
+		{ "id": "simplenetherores:deep_gold_ore", "required": false }
 	]
 }

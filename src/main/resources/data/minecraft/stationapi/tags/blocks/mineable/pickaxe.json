@@ -6,6 +6,13 @@
 		"simplenetherores:diamond_ore",
 		"simplenetherores:redstone_ore",
 		"simplenetherores:glowstone_ore",
-		"simplenetherores:lapis_ore"
+		"simplenetherores:lapis_ore",
+		{ "id": "simplenetherores:deep_coal_ore", "required": false },
+		{ "id": "simplenetherores:deep_iron_ore", "required": false },
+		{ "id": "simplenetherores:deep_gold_ore", "required": false },
+		{ "id": "simplenetherores:deep_diamond_ore", "required": false },
+		{ "id": "simplenetherores:deep_redstone_ore", "required": false },
+		{ "id": "simplenetherores:deep_glowstone_ore", "required": false },
+		{ "id": "simplenetherores:deep_lapis_ore", "required": false }
 	]
 }
